@@ -1,10 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { TarjetaPersona } from "./components/TarjetaPersona";
+import "./index.css";
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <TarjetaPersona 
+      
       persona= {{
           nombre:'Jessica',
           apellido: 'Randall',
@@ -15,14 +17,30 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       redes = {{
         github: {
           texto:"GitHub",
-          link: "https://www.google.com/"
+          link: "#"
         },
         facebook:{
-          texto:"facebook",
-          link:"facebook.com"
+          texto:"Frontend Mentor",
+          link:"#"
+        },
+        linkedin:{
+          texto:"LinkedIn",
+          link:"#"
+        }
+        ,
+        twitter:{
+          texto:"Twitter",
+          link:"#"
+        }
+        ,
+        instagram:{
+          texto:"Instagram",
+          link:"#"
         }
       }}
 
     />
+    
+    
   </React.StrictMode>,
 )

@@ -1,17 +1,16 @@
 import PropTypes from 'prop-types';
+import "./boton-redes.css"
 export function BotonRedes(props) {
     
     return (
         
-        <a href={props.redes.github.link} target="_blank" rel="noopener noreferrer">{props.redes.github.texto}</a>
+        <a href={props.redes.link} target="_blank" rel="noopener noreferrer">{props.redes.texto}</a>
     );
 }
 BotonRedes.propTypes={
     redes:PropTypes.shape({
-        github:PropTypes.shape({
-            texto:PropTypes.string,
-            link:PropTypes.string,
-        }),
+        link:PropTypes.string,
+        texto:PropTypes.string,
     }),
 };
 

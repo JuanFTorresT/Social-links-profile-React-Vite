@@ -1,77 +1,15 @@
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
   background-color: hsl(0, 0%, 8%);
   width: 100vw;
   height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-
-  place-items: center;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: hsl(0, 0%, 20%);
-  cursor: pointer;
-  transition: border-color 0.25s;
-  color: #FFF;
-  display: block;
-}
-button:hover {
-  background-color: hsl(75, 94%, 57%);
-  color: #242424;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-section{
-  min-width: 400px;
-  background-color: hsl(0, 0%, 12%);
+body{
   display: flex;
-  flex-direction: column;
-  gap: 16px;
-  padding: 30px;
-  border-radius: 8px;
-}
-
-span:nth-child(3){
-  color: hsl(75, 94%, 57%);
 }
 

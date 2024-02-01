@@ -1,12 +1,13 @@
-import React from "react";
 import { FotoPerfil } from './FotoPerfil';
 import { InfoPerfil } from './InfoPerfil';
 import { BotonRedes } from './BotonRedes';
 import PropTypes from 'prop-types';
+import "../components/tarjeta-persona.css"
 
 export function TarjetaPersona(props) {
+    const { redes } = props;
     return(
-        <React.StrictMode>
+        <div className='tarjeta'>
         <FotoPerfil/>
 
         <InfoPerfil 
@@ -19,10 +20,12 @@ export function TarjetaPersona(props) {
         }}
         />
         
-        <BotonRedes redes={props.redes}/>
+        {Object.keys(redes).map((red, index) => (
+        <BotonRedes key={index} redes={redes[red]} />
+      ))}
         
         
-        </React.StrictMode>
+        </div>
     );
 }
 
@@ -33,5 +36,15 @@ TarjetaPersona.propTypes = {
         pais: PropTypes.string,
         ciudad: PropTypes.string,
         descripcion: PropTypes.string,
-      }),
+    }),
+    redes: PropTypes.shape({
+        github: PropTypes.shape({
+            texto: PropTypes.string,
+            link: PropTypes.string,
+        }),
+        facebook: PropTypes.shape({
+            texto: PropTypes.string,
+            link: PropTypes.string,
+        }),
+    }),
 };

@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import "./info-perfil.css";
 export function InfoPerfil(props) {
     return(
         <div>

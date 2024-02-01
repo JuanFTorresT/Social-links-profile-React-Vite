@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: hsl(0, 0%, 100%);
+}
+
+h2{
+    font-weight: 600;
+}
+
+p{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+p:nth-child(2){
+    color:hsl(75, 94%, 57%);
+    font-weight: 600;
+}
+
+p:nth-child(3){
+    margin: 20px 0;
+}
+
