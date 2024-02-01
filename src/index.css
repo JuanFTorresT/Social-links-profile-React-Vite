@@ -11,5 +11,14 @@
 
 body{
   display: flex;
+  justify-content: center;
 }
 
+@media (450px >= width){
+  #root{
+    width: 100%;
+  }
+  .tarjeta{
+    width: 100%;
+  }
+}
